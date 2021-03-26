@@ -20,7 +20,19 @@
     "rules": {
         //Next.js automatically imports React for you
         "react/react-in-jsx-scope": "off",
-        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "react/jsx-props-no-spreading": 0
+        "react/jsx-filename-extension": [
+            1,
+            {
+                "extensions": [
+                    ".js",
+                    ".jsx"
+                ]
+            }
+        ],
+        "react/jsx-props-no-spreading": 0,
+        "linebreak-style": [
+            "error",
+            "windows"
+        ]
     }
 }
