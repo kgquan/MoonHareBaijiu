@@ -1,4 +1,5 @@
 @use "base/colours";
+@use "base/typography";
 
 html,
 body {
@@ -8,6 +9,7 @@ body {
 
 html {
 	box-sizing: border-box;
+    font-family: "TTRamillas-Regular", "Unna-Regular", Garamond, Georgia, serif;
 }
 
 *,

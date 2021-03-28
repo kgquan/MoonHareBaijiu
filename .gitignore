@@ -35,3 +35,9 @@ yarn-error.log*
 
 # VS Code workspace
 moon-hare-baijiu.code-workspace
+
+#Premium fonts
+public/fonts/TTRamillas-Regular.otf
+public/fonts/TTRamillas-Italic.otf
+public/fonts/TTRamillas-Bold.otf
+public/fonts/TTRamillas-BoldItalic.otf
