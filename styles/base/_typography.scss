@@ -2,52 +2,79 @@
 @font-face {
     font-family: "TTRamillas-Regular";
     font-weight: 400; 
-    src: url("../../public/fonts/TTRamillas-Regular.otf") format("opentype");
+    src: url("../../public/fonts/TT Ramillas/TTRamillas-Regular.otf") format("opentype");
 }
 
 @font-face {
     font-family: "TTRamillas-Italic";
     font-style: italic;
     font-weight: 400; 
-    src: url("../../public/fonts/TTRamillas-Italic.otf") format("opentype");
+    src: url("../../public/fonts/TT Ramillas/TTRamillas-Italic.otf") format("opentype");
 }
 
 @font-face {
     font-family: "TTRamillas-Bold";
     font-weight: 700; 
-    src: url("../../public/fonts/TTRamillas-Bold.otf") format("opentype");
+    src: url("../../public/fonts/TT Ramillas/TTRamillas-Bold.otf") format("opentype");
 }
 
 @font-face {
     font-family: "TTRamillas-BoldItalic";
     font-style: italic;
     font-weight: 700; 
-    src: url("../../public/fonts/TTRamillas-BoldItalic.otf") format("opentype");
+    src: url("../../public/fonts/TT Ramillas/TTRamillas-BoldItalic.otf") format("opentype");
 }
 
 //Unna - alternative body font from Google Fonts
 @font-face {
     font-family: "Unna-Regular";
     font-weight: 400; 
-    src: url("../../public/fonts/Unna-Regular.otf") format("opentype");
+    src: url("../../public/fonts/Unna/Unna-Regular.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Unna-Italic";
     font-style: italic;
     font-weight: 400; 
-    src: url("../../public/fonts/Unna-Italic.otf") format("opentype");
+    src: url("../../public/fonts/Unna/Unna-Italic.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Unna-Bold";
     font-weight: 700; 
-    src: url("../../public/fonts/Unna-Bold.otf") format("opentype");
+    src: url("../../public/fonts/Unna/Unna-Bold.otf") format("opentype");
 }
 
 @font-face {
     font-family: "Unna-BoldItalic";
     font-style: italic;
     font-weight: 700; 
-    src: url("../../public/fonts/Unna-BoldItalic.otf") format("opentype");
+    src: url("../../public/fonts/Unna/Unna-BoldItalic.otf") format("opentype");
+}
+
+//Poppins - sans-serif accent/button font from Google Fonts
+@font-face {
+    font-family: "Poppins-Regular";
+    font-weight: 400; 
+    src: url("../../public/fonts/Poppins/Poppins-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Poppins-Italic";
+    font-style: italic;
+    font-weight: 400; 
+    src: url("../../public/fonts/Poppins/Poppins-Italic.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Poppins-Bold";
+    font-weight: 700; 
+    src: url("../../public/fonts/Poppins/Poppins-Bold.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Poppins-BoldItalic";
+    font-style: italic;
+    font-weight: 700; 
+    src: url("../../public/fonts/Poppins/Poppins-BoldItalic.otf") format("opentype");
 }
