@@ -1,2 +1,17 @@
 @use "base/colours";
 
+html,
+body {
+    background: colours.$navy;
+	margin: 0;
+}
+
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
