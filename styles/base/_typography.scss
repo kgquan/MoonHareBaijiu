@@ -1,53 +1,53 @@
 //TT Ramillas
 @font-face {
-    font-family: "TTRamillas-Regular"; 
+    font-family: "TTRamillas-Regular";
+    font-weight: 400; 
     src: url("../../public/fonts/TTRamillas-Regular.otf") format("opentype");
-    font-weight: 400;
 }
 
 @font-face {
-    font-family: "TTRamillas-Italic"; 
+    font-family: "TTRamillas-Italic";
+    font-style: italic;
+    font-weight: 400; 
     src: url("../../public/fonts/TTRamillas-Italic.otf") format("opentype");
-    font-style: italic;
-    font-weight: 400;
 }
 
 @font-face {
-    font-family: "TTRamillas-Bold"; 
+    font-family: "TTRamillas-Bold";
+    font-weight: 700; 
     src: url("../../public/fonts/TTRamillas-Bold.otf") format("opentype");
-    font-weight: 700;
 }
 
 @font-face {
-    font-family: "TTRamillas-BoldItalic"; 
-    src: url("../../public/fonts/TTRamillas-BoldItalic.otf") format("opentype");
+    font-family: "TTRamillas-BoldItalic";
     font-style: italic;
-    font-weight: 700;
+    font-weight: 700; 
+    src: url("../../public/fonts/TTRamillas-BoldItalic.otf") format("opentype");
 }
 
 //Unna - alternative body font from Google Fonts
 @font-face {
-    font-family: "Unna-Regular"; 
+    font-family: "Unna-Regular";
+    font-weight: 400; 
     src: url("../../public/fonts/Unna-Regular.otf") format("opentype");
-    font-weight: 400;
 }
 
 @font-face {
-    font-family: "Unna-Italic"; 
+    font-family: "Unna-Italic";
+    font-style: italic;
+    font-weight: 400; 
     src: url("../../public/fonts/Unna-Italic.otf") format("opentype");
-    font-style: italic;
-    font-weight: 400;
 }
 
 @font-face {
-    font-family: "Unna-Bold"; 
+    font-family: "Unna-Bold";
+    font-weight: 700; 
     src: url("../../public/fonts/Unna-Bold.otf") format("opentype");
-    font-weight: 700;
 }
 
 @font-face {
-    font-family: "Unna-BoldItalic"; 
-    src: url("../../public/fonts/Unna-BoldItalic.otf") format("opentype");
+    font-family: "Unna-BoldItalic";
     font-style: italic;
-    font-weight: 700;
+    font-weight: 700; 
+    src: url("../../public/fonts/Unna-BoldItalic.otf") format("opentype");
 }
