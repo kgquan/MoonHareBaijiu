@@ -1,0 +1,39 @@
+@use "../base/colours";
+@use "../base/breakpoints";
+
+.header {
+    font-family: "Poppins", Arial, sans-serif;
+    padding: 1rem;
+    width: 100%;
+
+    @include breakpoints.laptop {
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+    @include breakpoints.desktop {
+        padding: 3rem 1rem 1rem 1rem;
+    }
+
+    &__logo {
+        grid-column: 1 / 5;
+    }
+
+    &__navigation {
+        grid-column: 6 / 13;
+
+        & ul {
+            display: none;
+            margin: 0;
+
+            @include breakpoints.laptop {
+                display: block;
+            }
+        
+            & li {
+                display: inline;
+                margin: 0 3rem 0 0;
+                text-decoration: none;
+            }
+        }
+    }
+}
