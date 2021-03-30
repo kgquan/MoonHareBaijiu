@@ -1,5 +1,6 @@
 @use "../base/colours";
 @use "../base/breakpoints";
+@use "../base/typography";
 
 .header {
     font-family: "Poppins", Arial, sans-serif;
@@ -30,6 +31,7 @@
             }
         
             & li {
+                @include typography.uppercase;
                 display: inline;
                 margin: 0 3rem 0 0;
                 text-decoration: none;

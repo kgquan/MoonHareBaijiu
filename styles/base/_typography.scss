@@ -1,3 +1,10 @@
+//Mixins
+@mixin uppercase {
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+}
+
 //TT Ramillas
 @font-face {
     font-family: "TTRamillas-Regular";
