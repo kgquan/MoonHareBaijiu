@@ -1,0 +1,10 @@
+@use "../base/breakpoints";
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    @include breakpoints.laptop {
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
