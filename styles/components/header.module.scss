@@ -16,11 +16,31 @@
     }
 
     &__logo {
-        grid-column: 1 / 5;
+        grid-column: 1 / 2;
+
+        @include breakpoints.laptop {
+            grid-column: 1 / 4;
+        }
+
+        @include breakpoints.desktop {
+            grid-column: 1 / 4;
+        }
     }
 
     &__navigation {
-        grid-column: 6 / 13;
+        grid-column: 2 / 3;
+
+        @include breakpoints.laptop {
+            grid-column: 4 / 9;
+        }
+
+        @include breakpoints.desktop {
+            grid-column: 4 / 11;
+        }
+
+        @include breakpoints.desktop-4k {
+            grid-column: 6 / 11;
+        }
 
         & ul {
             display: none;
@@ -36,6 +56,15 @@
                 margin: 0 3rem 0 0;
                 text-decoration: none;
             }
+        }
+    }
+
+    &__cart {
+        grid-column: 12 / 13;
+
+        svg {
+            position: relative;
+            top: -20%;
         }
     }
 }
