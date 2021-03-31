@@ -4,7 +4,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 0 auto;
-    max-width: 1100px;
+    max-width: 1200px;
+    padding: 1rem;
     width: 100%;
 
     @include breakpoints.laptop {
