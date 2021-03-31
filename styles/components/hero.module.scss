@@ -16,7 +16,7 @@
             @include font-size(24px);
             color: colours.$redgrey;
             line-height: 2;
-            margin: -2rem 0 0 0;
+            margin: rfs-fluid-value(-2rem) 0 0 0;
         }
 
         @include breakpoints.laptop {
