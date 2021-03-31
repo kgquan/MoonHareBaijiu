@@ -8,7 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
-    "@iconify-icons/ri": "^1.1.0",
+    "@iconify-icons/mdi": "^1.1.13",
+    "@iconify/icons-ri": "^1.1.0",
     "@iconify/react": "^1.1.4",
     "next": "10.0.9",
     "prop-types": "^15.7.2",

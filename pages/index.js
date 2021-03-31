@@ -1,5 +1,5 @@
-import shoppingCart2Line from '@iconify-icons/ri/shopping-cart-2-line';
 import { InlineIcon } from '@iconify/react';
+import shoppingCart2Line from '@iconify/icons-ri/shopping-cart-2-line';
 import homeStyles from '../styles/home.module.scss';
 import containerStyles from '../styles/components/container.module.scss';
 import headerStyles from '../styles/components/header.module.scss';
