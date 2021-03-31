@@ -1,0 +1,26 @@
+@use "../base/breakpoints";
+@use "../base/colours";
+@import "../../node_modules/rfs/scss.scss";
+
+.hero {
+    width: 100%;
+
+    &__description {
+        grid-column: 1 / 4;
+
+        h1 {
+            @include font-size(72px);
+        }
+
+        p {
+            @include font-size(24px);
+            color: colours.$redgrey;
+            line-height: 2;
+            margin: -2rem 0 0 0;
+        }
+
+        @include breakpoints.laptop {
+            grid-column: 1 / 9;
+        }
+    }
+}
