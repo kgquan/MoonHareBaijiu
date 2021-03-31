@@ -15,7 +15,7 @@
         padding: 3rem 1rem 1rem 1rem;
     }
 
-    &__logo {
+    &_logo {
         grid-column: 1 / 2;
 
         @include breakpoints.laptop {
@@ -27,7 +27,7 @@
         }
     }
 
-    &__navigation {
+    &_navigation {
         grid-column: 2 / 3;
 
         @include breakpoints.laptop {
@@ -59,7 +59,7 @@
         }
     }
 
-    &__cart {
+    &_cart {
         grid-column: 12 / 13;
 
         svg {

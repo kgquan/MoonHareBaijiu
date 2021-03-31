@@ -10,10 +10,10 @@ export default function Home() {
     <>
       <div className={headerStyles.header}>
         <div className={containerStyles.container}>
-          <div className={headerStyles.header__logo}>
+          <div className={headerStyles.header_logo}>
             Logo
           </div>
-          <div className={headerStyles.header__navigation}>
+          <div className={headerStyles.header_navigation}>
             <ul>
               <li>Shop</li>
               <li>About</li>
@@ -21,7 +21,7 @@ export default function Home() {
               <li>Contact</li>
             </ul>
           </div>
-          <div className={headerStyles.header__cart}>
+          <div className={headerStyles.header_cart}>
             <InlineIcon icon={shoppingCart2Line} width="36px" height="36px" />
           </div>
         </div>
@@ -29,7 +29,7 @@ export default function Home() {
       <div className={homeStyles.home}>
         <div className={heroStyles.hero}>
           <div className={containerStyles.container}>
-            <div className={heroStyles.hero__description}>
+            <div className={heroStyles.hero_description}>
               <h1>Make moments magical with our refined Chinese baijiu.</h1>
               <p>
                 With a silky-smooth finish and a rich smokey flavour, our
