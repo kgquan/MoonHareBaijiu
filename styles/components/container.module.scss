@@ -9,6 +9,7 @@
     width: 100%;
 
     @include breakpoints.laptop {
+        gap: 1.25rem;
         grid-template-columns: repeat(12, 1fr);
     }
 }
