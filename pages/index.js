@@ -4,6 +4,7 @@ import homeStyles from '../styles/home.module.scss';
 import containerStyles from '../styles/components/container.module.scss';
 import headerStyles from '../styles/components/header.module.scss';
 import heroStyles from '../styles/components/hero.module.scss';
+import buttonStyles from '../styles/components/button.module.scss';
 
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
                 With a silky-smooth finish and a rich smokey flavour, our
                 traditionally-produced liquor is the perfect drink for any occasion.
               </p>
+              <button type="button" className={`${buttonStyles.button} ${buttonStyles.button_large}`}>Explore our products</button>
             </div>
           </div>
         </div>
