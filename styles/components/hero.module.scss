@@ -3,10 +3,11 @@
 @import "../../node_modules/rfs/scss.scss";
 
 .hero {
+    min-height: 700px;
     width: 100%;
 
     &_description {
-        grid-column: 1 / 4;
+        grid-column: 1 / 5;
 
         h1 {
             @include font-size(72px);
