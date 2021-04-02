@@ -56,6 +56,7 @@ export default function Home() {
               </div>
               <div className={productStyles.circle} />
               <div className={productStyles.product_cta}>
+                <button type="button" className={`${buttonStyles.button} ${buttonStyles.button_secondary}`}>Learn More</button>
                 <button type="button" className={`${buttonStyles.button}`}>Add to Cart</button>
               </div>
             </div>
@@ -71,6 +72,7 @@ export default function Home() {
               </div>
               <div className={productStyles.circle} />
               <div className={productStyles.product_cta}>
+                <button type="button" className={`${buttonStyles.button} ${buttonStyles.button_secondary}`}>Learn More</button>
                 <button type="button" className={`${buttonStyles.button} ${buttonStyles.button_dark}`}>Add to Cart</button>
               </div>
             </div>
@@ -86,6 +88,7 @@ export default function Home() {
               </div>
               <div className={productStyles.circle} />
               <div className={productStyles.product_cta}>
+                <button type="button" className={`${buttonStyles.button} ${buttonStyles.button_secondary}`}>Learn More</button>
                 <button type="button" className={`${buttonStyles.button}`}>Add to Cart</button>
               </div>
             </div>

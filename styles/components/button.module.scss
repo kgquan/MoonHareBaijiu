@@ -53,6 +53,24 @@
         color: colours.$lightgrey;
     }
 
+    &.button_secondary {
+        background: colours.$greengrey;
+        border: none;
+        box-shadow: 0 0 20px rgba(colours.$greengrey, 0.25);
+        color: colours.$navy;
+
+        &:hover:enabled {
+            background: #D3D0C6;
+            box-shadow: 0 0 30px rgba(#D3D0C6, 0.25);
+            color: colours.$navy;
+        }
+    
+        &:active:enabled {
+            background: #AFA68E;
+            box-shadow: 0 0 10px rgba(#AFA68E, 0.25);
+        }
+    }
+
     &.button_dark {
         background: colours.$navy;
         border: none;
