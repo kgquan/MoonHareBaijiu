@@ -17,7 +17,7 @@
     @include breakpoints.laptop {
         margin: 0;
         min-height: 600px;
-        padding: 6rem 2rem 2rem 2rem;
+        padding: 6rem 2.4rem 2.4rem 2.4rem;
     }
 
     & .product_description,
@@ -44,6 +44,17 @@
         z-index: 3;
     }
 
+    & .product_chinese_name {
+        @include font-size(100px);
+        color: rgba(colours.$yellow, 15%);
+        font-family: "Jin Mei Mao Xing Shu", "STKaiti", "Free HK Kai", cursive;
+        left: 4%;
+        position: absolute;
+        text-shadow: 0 20px 30px rgba(colours.$yellow, 15%);
+        top: 7%;
+        z-index: 1;
+    }
+
     h2 {
         @include font-size(64px);
         margin: -1.2rem 0 1rem -0.2rem;
@@ -53,6 +64,8 @@
     p {
         @include typography.uppercase;
         font-family: "Poppins", Arial, sans-serif;
+        position: relative;
+        z-index: 5;
     }
 
     &_goldstar {
@@ -61,6 +74,11 @@
 
         p {
             color: colours.$darkgrey;
+        }
+
+        & .product_chinese_name {
+            color: rgba(colours.$dirtygold, 15%);
+            text-shadow: 0 20px 30px rgba(colours.$dirtygold, 15%);
         }
     }
 

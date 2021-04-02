@@ -49,6 +49,7 @@ export default function Home() {
               <div className={productStyles.product_description}>
                 <p>Our classic, sweet-tasting flavour</p>
                 <h2>Gold Star Baijiu</h2>
+                <span className={productStyles.product_chinese_name}>金星白酒</span>
               </div>
               <div className={productStyles.product_visual}>
                 <img src="https://via.placeholder.com/450" alt="Placeholder" />
@@ -63,6 +64,7 @@ export default function Home() {
               <div className={productStyles.product_description}>
                 <p>Bold, brash, and for the daring</p>
                 <h2>Dragon Sword Baijiu</h2>
+                <span className={productStyles.product_chinese_name}>屠龍刀白酒</span>
               </div>
               <div className={productStyles.product_visual}>
                 <img src="https://via.placeholder.com/450" alt="Placeholder" />
@@ -77,6 +79,7 @@ export default function Home() {
               <div className={productStyles.product_description}>
                 <p>Fragrant, with notes of peach</p>
                 <h2>Peaches of Immortality Baijiu</h2>
+                <span className={productStyles.product_chinese_name}>仙桃白酒</span>
               </div>
               <div className={productStyles.product_visual}>
                 <img src="https://via.placeholder.com/450" alt="Placeholder" />
