@@ -1,0 +1,74 @@
+@use "../base/colours";
+@use "../base/typography";
+@use "../base/breakpoints";
+@import "../../node_modules/rfs/scss.scss";
+
+.product {
+    margin: 0 0 1.25rem 0;
+    min-height: 500px;
+    overflow: hidden;
+    padding: 3rem 1.6rem;
+    position: relative;
+    z-index: 1;
+
+    @include breakpoints.laptop {
+        margin: 0;
+        min-height: 600px;
+        padding: 6rem 2rem 2rem 2rem;
+    }
+
+    h2 {
+        @include font-size(64px);
+        margin: -1.2rem 0 1rem -0.2rem;
+        z-index: 4;
+    }
+
+    p {
+        @include typography.uppercase;
+        font-family: "Poppins", Arial, sans-serif;
+    }
+
+    & .circle {
+        background: colours.$navy;
+        border-radius: 50%;
+        height: 475px;
+        position: absolute;
+        left: 40%;
+        top: 33%;
+        width: 475px;
+        z-index: 2;
+    }
+
+    & .product_visual {
+        text-align: right;
+        min-height: 500px;
+        position: relative;
+        width: auto;
+        z-index: 3;
+    }
+
+    &_goldstar {
+        background: colours.$yellow;
+        color: colours.$navy;
+
+        p {
+            color: colours.$darkgrey;
+        }
+    }
+
+    &_dragonsword {
+        background: colours.$red;
+
+        p {
+            color: colours.$grey;
+        }
+    }
+
+    &_peachesofimmortality {
+        background: colours.$purple;
+
+        p {
+            color: colours.$grey;
+        }
+    }
+}

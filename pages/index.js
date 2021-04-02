@@ -5,6 +5,8 @@ import containerStyles from '../styles/components/container.module.scss';
 import headerStyles from '../styles/components/header.module.scss';
 import heroStyles from '../styles/components/hero.module.scss';
 import buttonStyles from '../styles/components/button.module.scss';
+import productListStyles from '../styles/components/productlist.module.scss';
+import productStyles from '../styles/components/product.module.scss';
 
 export default function Home() {
   return (
@@ -40,7 +42,37 @@ export default function Home() {
             </div>
           </div>
         </div>
-
+        <div className={productListStyles.productlist_staggered}>
+          <div className={containerStyles.container}>
+            <div className={`${productListStyles.product} ${productStyles.product} ${productStyles.product_goldstar}`}>
+              <p>Our classic, sweet-tasting flavour</p>
+              <h2>Gold Star Baijiu</h2>
+              <div className={productStyles.product_visual}>
+                <img src="https://via.placeholder.com/450" alt="Placeholder" />
+              </div>
+              <div className={productStyles.circle} />
+              <button type="button" className={`${buttonStyles.button}`}>Add to Cart</button>
+            </div>
+            <div className={`${productListStyles.product} ${productStyles.product} ${productStyles.product_dragonsword}`}>
+              <p>Bold, brash, and for the daring</p>
+              <h2>Dragon Sword Baijiu</h2>
+              <div className={productStyles.product_visual}>
+                <img src="https://via.placeholder.com/450" alt="Placeholder" />
+              </div>
+              <div className={productStyles.circle} />
+              <button type="button" className={`${buttonStyles.button}`}>Add to Cart</button>
+            </div>
+            <div className={`${productListStyles.product} ${productStyles.product} ${productStyles.product_peachesofimmortality}`}>
+              <p>Fragrant, with notes of peach</p>
+              <h2>Peaches of Immortality Baijiu</h2>
+              <div className={productStyles.product_visual}>
+                <img src="https://via.placeholder.com/450" alt="Placeholder" />
+              </div>
+              <div className={productStyles.circle} />
+              <button type="button" className={`${buttonStyles.button}`}>Add to Cart</button>
+            </div>
+          </div>
+        </div>
       </div>
     </>
   );
