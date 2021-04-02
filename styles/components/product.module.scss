@@ -23,6 +23,8 @@
     & .product_description,
     & .product_cta {
         flex-grow: 1;
+        position: relative;
+        z-index: 10;
     }
 
     & .circle {
@@ -48,10 +50,10 @@
         @include font-size(100px);
         color: rgba(colours.$yellow, 15%);
         font-family: "Jin Mei Mao Xing Shu", "STKaiti", "Free HK Kai", cursive;
-        left: 4%;
+        left: -4%;
         position: absolute;
         text-shadow: 0 20px 30px rgba(colours.$yellow, 15%);
-        top: 7%;
+        top: -12%;
         user-select: none;
         z-index: 1;
     }
