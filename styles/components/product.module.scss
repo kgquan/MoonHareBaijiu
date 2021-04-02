@@ -4,6 +4,9 @@
 @import "../../node_modules/rfs/scss.scss";
 
 .product {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
     margin: 0 0 1.25rem 0;
     min-height: 500px;
     overflow: hidden;
@@ -17,6 +20,30 @@
         padding: 6rem 2rem 2rem 2rem;
     }
 
+    & .product_description,
+    & .product_cta {
+        flex-grow: 1;
+    }
+
+    & .circle {
+        background: colours.$navy;
+        border-radius: 50%;
+        height: 475px;
+        left: 40%;
+        position: absolute;
+        top: 33%;
+        width: 475px;
+        z-index: 2;
+    }
+
+    & .product_visual {
+        flex-grow: 2;
+        position: relative;
+        text-align: right;
+        width: auto;
+        z-index: 3;
+    }
+
     h2 {
         @include font-size(64px);
         margin: -1.2rem 0 1rem -0.2rem;
@@ -26,25 +53,6 @@
     p {
         @include typography.uppercase;
         font-family: "Poppins", Arial, sans-serif;
-    }
-
-    & .circle {
-        background: colours.$navy;
-        border-radius: 50%;
-        height: 475px;
-        position: absolute;
-        left: 40%;
-        top: 33%;
-        width: 475px;
-        z-index: 2;
-    }
-
-    & .product_visual {
-        text-align: right;
-        min-height: 500px;
-        position: relative;
-        width: auto;
-        z-index: 3;
     }
 
     &_goldstar {

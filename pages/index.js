@@ -44,32 +44,47 @@ export default function Home() {
         </div>
         <div className={productListStyles.productlist_staggered}>
           <div className={containerStyles.container}>
+
             <div className={`${productListStyles.product} ${productStyles.product} ${productStyles.product_goldstar}`}>
-              <p>Our classic, sweet-tasting flavour</p>
-              <h2>Gold Star Baijiu</h2>
+              <div className={productStyles.product_description}>
+                <p>Our classic, sweet-tasting flavour</p>
+                <h2>Gold Star Baijiu</h2>
+              </div>
               <div className={productStyles.product_visual}>
                 <img src="https://via.placeholder.com/450" alt="Placeholder" />
               </div>
               <div className={productStyles.circle} />
-              <button type="button" className={`${buttonStyles.button}`}>Add to Cart</button>
+              <div className={productStyles.product_cta}>
+                <button type="button" className={`${buttonStyles.button}`}>Add to Cart</button>
+              </div>
             </div>
+
             <div className={`${productListStyles.product} ${productStyles.product} ${productStyles.product_dragonsword}`}>
-              <p>Bold, brash, and for the daring</p>
-              <h2>Dragon Sword Baijiu</h2>
+              <div className={productStyles.product_description}>
+                <p>Bold, brash, and for the daring</p>
+                <h2>Dragon Sword Baijiu</h2>
+              </div>
               <div className={productStyles.product_visual}>
                 <img src="https://via.placeholder.com/450" alt="Placeholder" />
               </div>
               <div className={productStyles.circle} />
-              <button type="button" className={`${buttonStyles.button}`}>Add to Cart</button>
+              <div className={productStyles.product_cta}>
+                <button type="button" className={`${buttonStyles.button}`}>Add to Cart</button>
+              </div>
             </div>
+
             <div className={`${productListStyles.product} ${productStyles.product} ${productStyles.product_peachesofimmortality}`}>
-              <p>Fragrant, with notes of peach</p>
-              <h2>Peaches of Immortality Baijiu</h2>
+              <div className={productStyles.product_description}>
+                <p>Fragrant, with notes of peach</p>
+                <h2>Peaches of Immortality Baijiu</h2>
+              </div>
               <div className={productStyles.product_visual}>
                 <img src="https://via.placeholder.com/450" alt="Placeholder" />
               </div>
               <div className={productStyles.circle} />
-              <button type="button" className={`${buttonStyles.button}`}>Add to Cart</button>
+              <div className={productStyles.product_cta}>
+                <button type="button" className={`${buttonStyles.button}`}>Add to Cart</button>
+              </div>
             </div>
           </div>
         </div>
