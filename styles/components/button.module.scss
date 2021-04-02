@@ -52,4 +52,22 @@
         box-shadow: 0 0 10px rgba(#871818, 0.25);
         color: colours.$lightgrey;
     }
+
+    &.button_dark {
+        background: colours.$navy;
+        border: none;
+        box-shadow: 0 0 20px rgba(colours.$navy, 0.25);
+
+        &:hover:enabled {
+            background: #443E47;
+            box-shadow: 0 0 30px rgba(#443E47, 0.25);
+            color: #FFFFFF;
+        }
+    
+        &:active:enabled {
+            background: #19171B;
+            box-shadow: 0 0 10px rgba(#19171B, 0.25);
+            color: colours.$lightgrey;
+        }
+    }
 }
