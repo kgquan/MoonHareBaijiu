@@ -2,9 +2,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-This website uses [Swell](https://www.swell.is/) to power its ecommerce store. To begin, [sign up for Swell](https://swell.store/signup) and put yourself on the free starter plan to gain access to the developer sandbox.
+This website uses [Swell](https://www.swell.is/), a headless ecommerce platform, to power its ecommerce capabilities. To begin, [sign up for Swell](https://swell.store/signup) and put yourself on the free starter plan to gain access to the developer sandbox.
 
-Once you've done so, you can connect Swell to the website by using your store's API keys. When logged in to Swell, use the left-hand navigation to select Settings > API keys. You will be using your store ID, along with one of the public and secret keys that have been generated.
+Once you've done so, you can integrate Swell with the website by using your Swell store's API keys. When logged in to Swell, use the left-hand navigation to select Settings > API keys. You will be using your store ID, along with one of the public and secret keys that have been generated.
 
 Then, create a next.config.js file in the root folder. Then, add the following code, and replace each value with your store's ID, secret key, and public key, respectively:
 ```js
@@ -17,7 +17,7 @@ module.exports = {
 };
 ```
 
-First, run the development server:
+After doing this, you can begin to run the development server:
 
 ```bash
 npm run dev
