@@ -41,3 +41,6 @@ public/fonts/TTRamillas-Regular.otf
 public/fonts/TTRamillas-Italic.otf
 public/fonts/TTRamillas-Bold.otf
 public/fonts/TTRamillas-BoldItalic.otf
+
+#.next.config.js
+next.config.js
