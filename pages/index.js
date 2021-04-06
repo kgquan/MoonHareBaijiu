@@ -67,9 +67,9 @@ export default function Home(props) {
           </div>
         </div>
         <div className={productListStyles.productlist_staggered}>
-          <div className={containerStyles.container}>
+          <div className={containerStyles.container} data-cy="featured-products">
             {products.map((product) => (
-              <div key={product.id} className={`${productListStyles.product} ${productStyles.product} ${setColour(product.slug)}`}>
+              <div key={product.id} className={`${productListStyles.product} ${productStyles.product} ${setColour(product.slug)}`} data-cy="product">
                 <div className={productStyles.product_description}>
                   <p>{product.attributes.tagline.value}</p>
                   <h2>{product.name}</h2>
