@@ -4,6 +4,8 @@ import PropTypes from 'prop-types';
 import { InlineIcon } from '@iconify/react';
 import shoppingCart2Line from '@iconify/icons-ri/shopping-cart-2-line';
 import homeStyles from '../styles/home.module.scss';
+import cartStyles from '../styles/components/cart.module.scss';
+import notificationBadgeStyles from '../styles/components/notificationbadge.module.scss';
 import containerStyles from '../styles/components/container.module.scss';
 import headerStyles from '../styles/components/header.module.scss';
 import heroStyles from '../styles/components/hero.module.scss';
@@ -49,7 +51,10 @@ export default function Home(props) {
             </ul>
           </div>
           <div className={headerStyles.header_cart}>
-            <InlineIcon icon={shoppingCart2Line} width="36px" height="36px" />
+            <div className={cartStyles.cart_button}>
+              <div className={notificationBadgeStyles.notification_badge}>100</div>
+              <InlineIcon icon={shoppingCart2Line} width="36px" height="36px" />
+            </div>
           </div>
         </div>
       </div>
