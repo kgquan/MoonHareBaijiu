@@ -12,6 +12,15 @@ import productStyles from '../styles/components/product.module.scss';
 export default function Home(props) {
   const { products } = props;
 
+  const addToCartHandler = async (product) => {
+    swell.init(process.env.STORE_ID, process.env.STORE_PUBLIC_KEY);
+    await swell.cart.get();
+    await swell.cart.addItem({
+      product_id: product.id,
+      quantity: 1,
+    });
+  };
+
   /** Given a URL slug, return the appropriate CSS styles.
    *  @param slug The part of a URL that explains the content of a page.
    *  @example
@@ -64,7 +73,7 @@ export default function Home(props) {
                   <div className={productStyles.circle} />
                   <div className={productStyles.product_cta}>
                     <button type="button" className={`${buttonStyles.button} ${buttonStyles.button_secondary}`}>Learn More</button>
-                    <button type="button" className={`${buttonStyles.button} ${setColour(product.slug).includes('sword') ? buttonStyles.button_dark : ''}`}>Add to Cart</button>
+                    <button type="button" onClick={() => addToCartHandler(product)} className={`${buttonStyles.button} ${setColour(product.slug).includes('sword') ? buttonStyles.button_dark : ''}`}>Add to Cart</button>
                   </div>
                 </div>
               ))}
