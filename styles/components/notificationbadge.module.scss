@@ -10,15 +10,18 @@
     font-family: "Poppins", Arial, sans-serif;
     font-size: 12px;
     font-weight: 700;
-    left: 65%;
+    left: 70%;
+    min-width: 2rem;
     padding: 0.4rem;
     position: absolute;
-    top: -30%;
+    text-align: center;
+    top: -60%;
     z-index: 5;
 
     @include breakpoints.laptop {
         @include font-size(16px);
         left: 35%;
-        top: -40%;
+        min-width: 2.4rem;
+        top: -80%;
     }
 }

@@ -61,9 +61,10 @@
 
     &_cart {
         grid-column: 12 / 13;
+        position: relative;
 
         svg {
-            position: relative;
+            position: inherit;
             top: -20%;
         }
     }
