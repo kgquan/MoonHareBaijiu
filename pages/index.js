@@ -1,6 +1,9 @@
+import React, { useContext } from 'react';
 import swell from 'swell-js';
 import PropTypes from 'prop-types';
 import Layout from '../components/Layout';
+import { StoreContext } from '../components/StoreContext';
+import { CART_RETRIEVE_SUCCESS } from '../context/actions';
 
 import homeStyles from '../styles/home.module.scss';
 import containerStyles from '../styles/components/container.module.scss';
@@ -11,14 +14,20 @@ import productStyles from '../styles/components/product.module.scss';
 
 export default function Home(props) {
   const { products } = props;
+  const { dispatch } = useContext(StoreContext);
 
+  /**
+   * Handles adding a single product to your cart.
+   * @param product An object containing the product ID
+   */
   const addToCartHandler = async (product) => {
     swell.init(process.env.STORE_ID, process.env.STORE_PUBLIC_KEY);
-    await swell.cart.get();
-    await swell.cart.addItem({
+    const cartData = await swell.cart.addItem({
       product_id: product.id,
       quantity: 1,
     });
+
+    dispatch({ type: CART_RETRIEVE_SUCCESS, payload: cartData });
   };
 
   /** Given a URL slug, return the appropriate CSS styles.

@@ -44,7 +44,7 @@ const Layout = ({ children }) => {
           </div>
           <div className={headerStyles.header_cart}>
             <div className={notificationBadgeStyles.notification_badge}>
-              {cart.loading ? '...' : cart.data.items.length}
+              {cart.loading ? '...' : cart.data.item_quantity}
             </div>
             <InlineIcon icon={shoppingCart2Line} width="36px" height="36px" />
             <div className={cartStyles.cart_button} />
