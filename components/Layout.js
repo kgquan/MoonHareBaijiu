@@ -15,6 +15,10 @@ import { CART_RETRIEVE_REQUEST, CART_RETRIEVE_SUCCESS } from '../context/actions
 const Layout = ({ children }) => {
   const { state, dispatch } = useContext(StoreContext);
   const { cart } = state;
+  let itemQuantity = 0;
+  if (cart && cart.data) {
+    itemQuantity = cart.data.item_quantity;
+  }
 
   useEffect(() => {
     const fetchCart = async () => {
@@ -44,7 +48,7 @@ const Layout = ({ children }) => {
           </div>
           <div className={headerStyles.header_cart}>
             <div className={notificationBadgeStyles.notification_badge}>
-              {cart.loading ? '...' : cart.data.item_quantity}
+              {cart.loading ? '...' : itemQuantity}
             </div>
             <InlineIcon icon={shoppingCart2Line} width="36px" height="36px" />
             <div className={cartStyles.cart_button} />
