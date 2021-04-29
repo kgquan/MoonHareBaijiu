@@ -1,4 +1,7 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useEffect, useContext } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
 import PropTypes from 'prop-types';
 import swell from 'swell-js';
 
@@ -36,7 +39,11 @@ const Layout = ({ children }) => {
       <div className={headerStyles.header}>
         <div className={containerStyles.container}>
           <div className={headerStyles.header_logo}>
-            Logo
+            <Link href="/">
+              <a>
+                <Image src="/images/logo.svg" width={227} height={43} />
+              </a>
+            </Link>
           </div>
           <div className={headerStyles.header_navigation}>
             <ul>
