@@ -1,5 +1,27 @@
 @use "../base/breakpoints";
 
+.productlist {
+    grid-column: 1 / 5;
+    width: 100%;
+
+    @include breakpoints.laptop {
+        grid-column: 4 / 13;
+    }
+
+    & .product {
+        grid-column: 1 / 5;
+        width: 100%;
+
+        @include breakpoints.laptop {
+            grid-column: span 4;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
 .productlist_staggered {
     width: 100%;
 
